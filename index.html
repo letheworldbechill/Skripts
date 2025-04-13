@@ -10,8 +10,12 @@
     <div class="container">
         <h1>Skript-Tracker</h1>
         <div class="script-form">
-            <input type="text" id="script-name" placeholder="Neues Skript (z.B. Wäsche waschen)">
-            <button onclick="addScript()">Hinzufügen</button>
+            <input type="text" id="script-name" placeholder="Skript-Name (z.B. Wäsche waschen)">
+            <div id="steps-container">
+                <input type="text" class="step-input" placeholder="Schritt 1">
+            </div>
+            <button onclick="addStepInput()">+ Schritt</button>
+            <button onclick="addScript()">Skript hinzufügen</button>
         </div>
         <div id="script-list"></div>
     </div>
