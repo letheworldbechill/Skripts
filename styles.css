@@ -26,20 +26,25 @@ h1 {
 
 .script-form {
     display: flex;
+    flex-direction: column;
     gap: 10px;
     margin-bottom: 20px;
 }
 
 input {
-    flex: 1;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
+    width: 100%;
+}
+
+.step-input {
+    margin-bottom: 5px;
 }
 
 button {
-    padding: 10px 20px;
+    padding: 10px;
     background-color: #28a745;
     color: white;
     border: none;
@@ -55,7 +60,7 @@ button:hover {
 .script-item {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 10px;
     margin-bottom: 10px;
     background-color: #f9f9f9;
@@ -76,10 +81,6 @@ button:hover {
 @media (max-width: 500px) {
     .container {
         padding: 10px;
-    }
-
-    .script-form {
-        flex-direction: column;
     }
 
     button {
